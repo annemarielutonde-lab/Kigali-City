@@ -1,0 +1,115 @@
+<h1>Welcome to Kigali City</h1>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigali Smart City | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">✦</div>
+            <div>
+                <h2>KIGALI ONE</h2>
+                <p>SMART CITY PORTAL</p>
+            </div>
+        </div>
+
+        <p class="nav-label">WORKSPACE</p>
+        <nav>
+            <a class="active" href="index.html"><span class="nav-icon">▦</span> Dashboard</a>
+            <a href="weather.html"><span class="nav-icon">☀</span> Weather</a>
+            <a href="wallet.html"><span class="nav-icon">▤</span> My Wallet</a>
+            <a href="admin.html"><span class="nav-icon">⚙</span> Admin Panel</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>🇷🇼 Made for Kigali</p>
+            <small>A smarter, cleaner and more connected city starts here.</small>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Workspace / Overview</p>
+                <h1>City Dashboard</h1>
+            </div>
+            <div class="top-actions">
+                <span class="status-pill">● Portal Online</span>
+                <button id="theme-toggle">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <p class="eyebrow">WELCOME TO KIGALI ONE</p>
+            <h2>Your city. Your services. One smart portal.</h2>
+            <p>Stay informed about city weather, mobility, public alerts and your saved event tickets — all in one place.</p>
+        </section>
+
+        <section class="section-title">
+            <div>
+                <h2>City at a glance</h2>
+                <p>Your smart-city overview</p>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <div class="stat-top">
+                    <div class="stat-icon purple">🛵</div>
+                    <span class="stat-tag">MOBILITY</span>
+                </div>
+                <h3>Active E-Motos</h3>
+                <div class="stat-number">120</div>
+                <p class="stat-note">Sample city mobility data</p>
+            </div>
+
+            <div class="card">
+                <div class="stat-top">
+                    <div class="stat-icon blue">🌦️</div>
+                    <span class="stat-tag">WEATHER</span>
+                </div>
+                <h3>City Alerts</h3>
+                <div class="stat-number" id="alert-count">0</div>
+                <p class="stat-note">Alerts published to this dashboard</p>
+            </div>
+
+            <div class="card">
+                <div class="stat-top">
+                    <div class="stat-icon green">🎟️</div>
+                    <span class="stat-tag">YOUR WALLET</span>
+                </div>
+                <h3>Saved Tickets</h3>
+                <div class="stat-number" id="ticket-count">0</div>
+                <p class="stat-note">Tickets saved in this browser</p>
+            </div>
+        </section>
+
+        <div id="alert-message" class="alert-box"></div>
+
+        <section class="two-column">
+            <div class="panel">
+                <h2>🌤️ Kigali weather</h2>
+                <p>Check current temperature and wind speed using live weather data.</p>
+                <a class="btn" href="weather.html">Explore weather →</a>
+            </div>
+
+            <div class="panel">
+                <h2>⚡ Quick access</h2>
+                <p>Need to publish a city alert or manage your event tickets?</p>
+                <a class="btn btn-secondary" href="admin.html">Open Admin</a>
+                <a class="btn btn-secondary" href="wallet.html">My Wallet</a>
+            </div>
+        </section>
+
+        <footer class="footer">Kigali One · Smart City Portal · Student Project</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```

@@ -1,0 +1,20 @@
+<section class="panel">
+  <h2>🎟️ My Event Wallet</h2>
+  <p>Save your favourite Kigali events here!</p>
+
+  <label for="ticket-name">Event name</label>
+  <input id="ticket-name" type="text" placeholder="e.g. Kigali Music Festival">
+
+  <label for="ticket-date">Event date</label>
+  <input id="ticket-date" type="date">
+
+  <label for="ticket-price">Ticket price (RWF)</label>
+  <input id="ticket-price" type="number" min="0" placeholder="e.g. 2000">
+
+  <button id="save-ticket" class="btn" type="button">
+    🎟️ Save Event
+  </button>
+
+  <h3>My Saved Tickets: <span id="ticket-count">0</span></h3>
+  <div id="ticket-list">Loading tickets...</div>
+</section>

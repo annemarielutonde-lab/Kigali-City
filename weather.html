@@ -1,0 +1,62 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigali Smart City | Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">✦</div>
+            <div><h2>KIGALI ONE</h2><p>SMART CITY PORTAL</p></div>
+        </div>
+        <p class="nav-label">WORKSPACE</p>
+        <nav>
+            <a href="index.html"><span class="nav-icon">▦</span> Dashboard</a>
+            <a class="active" href="weather.html"><span class="nav-icon">☀</span> Weather</a>
+            <a href="wallet.html"><span class="nav-icon">▤</span> My Wallet</a>
+            <a href="admin.html"><span class="nav-icon">⚙</span> Admin Panel</a>
+        </nav>
+        <div class="sidebar-bottom"><p>🇷🇼 Made for Kigali</p><small>Live weather information for the city.</small></div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div><p class="breadcrumb">Workspace / City services</p><h1>Weather Center</h1></div>
+            <div class="top-actions">
+                <span class="status-pill">● Weather service</span>
+                <button id="theme-toggle">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <p class="eyebrow">KIGALI WEATHER CENTER</p>
+            <h2>Know the weather before you go.</h2>
+            <p>Request current weather data for Kigali from the Open-Meteo weather API.</p>
+        </section>
+
+        <section class="two-column">
+            <div class="panel">
+                <h2>🌍 Current city conditions</h2>
+                <p>Press the button to fetch the latest available temperature and wind-speed data.</p>
+                <button class="btn" id="weather-button">↻ Scan Weather</button>
+                <p id="weather-result" aria-live="polite" style="margin-top:20px;">Your weather results will appear here.</p>
+            </div>
+
+            <div class="panel">
+                <h2>📍 Location</h2>
+                <p><strong>Kigali, Rwanda</strong></p>
+                <p>Coordinates: -1.95, 30.06</p>
+                <p>Weather data is provided by Open-Meteo. An internet connection is required.</p>
+            </div>
+        </section>
+
+        <footer class="footer">Kigali One · Weather Center</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+```

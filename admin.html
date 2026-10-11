@@ -1,0 +1,65 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigali Smart City | Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">✦</div>
+            <div><h2>KIGALI ONE</h2><p>SMART CITY PORTAL</p></div>
+        </div>
+        <p class="nav-label">WORKSPACE</p>
+        <nav>
+            <a href="index.html"><span class="nav-icon">▦</span> Dashboard</a>
+            <a href="weather.html"><span class="nav-icon">☀</span> Weather</a>
+            <a href="wallet.html"><span class="nav-icon">▤</span> My Wallet</a>
+            <a class="active" href="admin.html"><span class="nav-icon">⚙</span> Admin Panel</a>
+        </nav>
+        <div class="sidebar-bottom"><p>⚙️ Admin tools</p><small>Create a demonstration alert for the dashboard.</small></div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div><p class="breadcrumb">Workspace / Management</p><h1>Admin Center</h1></div>
+            <div class="top-actions"><button id="theme-toggle">🌙 Dark Mode</button></div>
+        </header>
+
+        <section class="hero">
+            <p class="eyebrow">CITY MANAGEMENT</p>
+            <h2>Keep citizens informed.</h2>
+            <p>Create a city alert and send it to the dashboard using a URL parameter.</p>
+        </section>
+
+        <section class="two-column">
+            <div class="panel">
+                <h2>📣 Publish a city alert</h2>
+                <p>Enter a short message to display on the main dashboard.</p>
+
+                <form id="admin-form">
+                    <label for="alert-input">Alert message</label>
+                    <textarea id="alert-input" maxlength="200" required
+                        placeholder="Example: Heavy rain expected in Kigali. Please take care."></textarea>
+                    <button class="btn" type="submit">Publish Alert →</button>
+                </form>
+            </div>
+
+            <div class="panel">
+                <h2>💡 How this works</h2>
+                <p><strong>1. Enter a message.</strong><br>The form collects the alert text.</p>
+                <p><strong>2. JavaScript reads it.</strong><br>The browser adds it to the dashboard URL.</p>
+                <p><strong>3. The dashboard displays it.</strong><br>JavaScript reads the URL parameter and shows the alert.</p>
+                <p>This is a demonstration, not a secure production admin system.</p>
+            </div>
+        </section>
+
+        <footer class="footer">Kigali One · Administration Demo</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+```
