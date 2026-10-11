@@ -1,20 +1,63 @@
-<section class="panel">
-  <h2>🎟️ My Event Wallet</h2>
-  <p>Save your favourite Kigali events here!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigali Smart City | My Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">✦</div>
+            <div><h2>KIGALI ONE</h2><p>SMART CITY PORTAL</p></div>
+        </div>
+        <p class="nav-label">WORKSPACE</p>
+        <nav>
+            <a href="index.html"><span class="nav-icon">▦</span> Dashboard</a>
+            <a href="weather.html"><span class="nav-icon">☀</span> Weather</a>
+            <a class="active" href="wallet.html"><span class="nav-icon">▤</span> My Wallet</a>
+            <a href="admin.html"><span class="nav-icon">⚙</span> Admin Panel</a>
+        </nav>
+        <div class="sidebar-bottom"><p>🇷🇼 Made for Kigali</p><small>Keep your favourite event tickets in one place.</small></div>
+    </aside>
 
-  <label for="ticket-name">Event name</label>
-  <input id="ticket-name" type="text" placeholder="e.g. Kigali Music Festival">
+    <main class="main">
+        <header class="topbar">
+            <div><p class="breadcrumb">Workspace / Personal</p><h1>My Event Wallet</h1></div>
+            <div class="top-actions"><button id="theme-toggle">🌙 Dark Mode</button></div>
+        </header>
 
-  <label for="ticket-date">Event date</label>
-  <input id="ticket-date" type="date">
+        <section class="hero">
+            <p class="eyebrow">YOUR KIGALI EVENTS</p>
+            <h2>Save the events you’re looking forward to.</h2>
+            <p>Add event details to keep your tickets organized in this browser.</p>
+        </section>
 
-  <label for="ticket-price">Ticket price (RWF)</label>
-  <input id="ticket-price" type="number" min="0" placeholder="e.g. 2000">
+        <section class="two-column">
+            <div class="panel">
+                <h2>🎟️ Save an event</h2>
+                <p>Your saved tickets stay in this browser using local storage.</p>
+                <label for="ticket-name">Event name</label>
+                <input id="ticket-name" type="text" placeholder="e.g. Kigali Music Festival">
 
-  <button id="save-ticket" class="btn" type="button">
-    🎟️ Save Event
-  </button>
+                <label for="ticket-date">Event date</label>
+                <input id="ticket-date" type="date">
 
-  <h3>My Saved Tickets: <span id="ticket-count">0</span></h3>
-  <div id="ticket-list">Loading tickets...</div>
-</section>
+                <label for="ticket-price">Ticket price (RWF)</label>
+                <input id="ticket-price" type="number" min="0" step="any" placeholder="e.g. 2000">
+
+                <button id="save-ticket" class="btn" type="button">🎟️ Save Event</button>
+            </div>
+
+            <div class="panel">
+                <h2>📋 My saved tickets <span class="ticket-total">(<span id="ticket-count">0</span>)</span></h2>
+                <div id="ticket-list" class="ticket-list" aria-live="polite">Loading tickets...</div>
+            </div>
+        </section>
+
+        <footer class="footer">Kigali One · My Event Wallet</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
